@@ -9,7 +9,7 @@ Welcome! This repository serves as my digital portfolio for **ECON 5200: Applied
 
 ## 👋 About Me
 
-I am an **[undergraduate] economics student** actively seeking opportunities in **Data Analysis, Economic Consulting, and Finance**.  
+I am an **undergraduate economics student** actively seeking opportunities in **Data Analysis, Economic Consulting, and Finance**.  
 My academic interests focus on bridging **traditional economic reasoning**—such as causal inference and structural thinking—with **scalable, data-driven methods** used in industry today.
 
 This portfolio reflects my progression toward becoming a data-literate economist who can both **interpret models economically** and **implement them computationally**.
