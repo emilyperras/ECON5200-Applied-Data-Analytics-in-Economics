@@ -103,4 +103,58 @@ After separating the dataset into **core market observations** and **anomalous d
   - Mean vs Median income and housing values
   - Standard Deviation vs Median Absolute Deviation (MAD)
 - Measured the **Inequality Wedge**:
-  
+
+
+  ### Interpretation
+
+The outlier population exhibits:
+
+- Higher volatility
+- Larger inequality wedges
+- Stronger divergence between statistical averages and typical outcomes
+
+This demonstrates how tail observations reshape perceived market conditions.
+
+---
+
+## Key Insight
+
+In platform-driven economies, anomaly detection is not merely a data-cleaning step — it is an **economic diagnostic tool**.
+
+Robust statistics and machine learning together reveal:
+
+- hidden market segments,
+- structural inequality,
+- and nonlinear behavioral patterns invisible to averages alone.
+
+The lab illustrates a core principle of modern analytics:
+
+> Reliable insight emerges when statistical intuition and algorithmic detection operate together.
+
+---
+
+## Tools & Concepts
+
+- Python (Pandas, NumPy)
+- Seaborn & Matplotlib visualization
+- Robust statistics (Median, IQR, MAD)
+- Tukey Fence outlier detection
+- Isolation Forest (unsupervised ML)
+- Multivariate anomaly detection
+- Distributional robustness analysis
+- Economic data storytelling
+
+---
+
+## Business Relevance
+
+For PropTech and marketplace platforms, anomaly detection enables:
+
+- fraud and pricing anomaly identification
+- segmentation of atypical market behavior
+- risk-aware valuation models
+- improved forecasting under skewed distributions
+
+Understanding the **tail of the distribution** is often more valuable than understanding the average.
+
+---
