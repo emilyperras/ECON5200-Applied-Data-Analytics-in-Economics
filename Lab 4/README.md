@@ -1,66 +1,106 @@
-# Hypothesis Testing & Causal Evidence Architecture  
-**The Epistemology of Falsification: Hypothesis Testing on the Lalonde Dataset**
+# Descriptive Statistics & Anomaly Detection  
+## Computational Laboratory: Robustness in a Skewed World
+
+**Lab 4 — Applied Data Analytics in Economics**
 
 ---
 
-## Objective
+## Objective: The Tech Economist Mindset
 
-This project operationalizes the scientific method within an empirical data science workflow by shifting the analytical focus from **estimation** to **falsification**. Rather than optimizing models to fit observed outcomes, the analysis evaluates competing causal narratives by attempting to reject incorrect explanations through statistical testing.
+Traditional statistics teaches analysts to trust the **average**.  
+In modern data-driven markets, however, the average often becomes a **vanity metric** distorted by extreme observations.
 
-Using the Lalonde (1986) job training dataset, the project frames causal inference as a process of **structured skepticism** — testing whether observed treatment effects withstand rigorous attempts at refutation. The objective is not simply to measure outcomes, but to determine whether the data provides sufficient evidence to invalidate the Null Hypothesis under multiple statistical assumptions.
+This lab reframes statistical analysis through the lens of a **Tech Economist**, treating data as a marketplace system where anomalies carry economic meaning rather than noise.
+
+Using the **California Housing Dataset** — a proxy for real-world PropTech platforms such as Zillow or Airbnb — the project investigates how skewed distributions and structural constraints (e.g., price caps) challenge classical statistical assumptions.
+
+The analytical progression moves from:
+
+**Manual Statistical Forensics → Algorithmic Anomaly Detection**
+
+---
+
+## Dataset Context: A Skewed Marketplace
+
+The California Housing dataset contains socioeconomic and housing characteristics across districts. A key feature is the **Median House Value ceiling** at \$500k, creating a real-world phenomenon known as a **ceiling effect**.
+
+This artificial cap mirrors constraints frequently observed in platform economies where reporting limits distort distributions and bias averages.
+
+Primary variables analyzed include:
+
+- Median Income (`MedInc`)
+- House Age (`HouseAge`)
+- Average Rooms (`AveRooms`)
+- Average Bedrooms (`AveBedrms`)
+- Population
+- Median House Value (`MedHouseVal`)
 
 ---
 
 ## Technical Approach
 
-The analysis implements a dual-framework hypothesis testing architecture designed for robustness under real-world data conditions:
+### Phase 1 — Data Inspection
 
-- **Parametric Testing (Signal-to-Noise Estimation)**
-  - Applied Welch’s T-Test using SciPy to estimate the Average Treatment Effect (ATE) of job training participation.
-  - Treated hypothesis testing as a signal-detection problem, quantifying whether observed earnings differences exceeded sampling noise.
-  - Accounted for unequal variances between treatment and control groups.
-
-- **Non-Parametric Validation**
-  - Conducted a permutation test with 10,000 resamples to validate results without relying on normality assumptions.
-  - Constructed an empirical null distribution to evaluate robustness against skewed earnings data.
-
-- **Statistical Discipline**
-  - Controlled for **Type I error risk** through formal hypothesis testing procedures.
-  - Cross-validated conclusions across parametric and distribution-free methods to reduce model-dependent inference.
+- Ingested and explored housing market data.
+- Visualized distributional skew and confirmed the ceiling effect.
+- Demonstrated how capped outcomes distort summary statistics.
 
 ---
 
-## Key Findings
+### Phase 2 — Manual Statistical Forensics (Foundations First)
 
-The analysis identified a statistically significant increase in real earnings of approximately **$1,795** for participants in the job training program.
+Before automation, anomaly detection was performed manually using **robust statistics**.
 
-Across both parametric and non-parametric frameworks, results consistently rejected the Null Hypothesis — demonstrating causal evidence through **proof by statistical contradiction**, rather than model fitting alone.
+**Methodology:**
+- Calculated Quartiles (Q1, Q3)
+- Computed Interquartile Range (IQR)
+- Implemented the **Tukey Fence (1.5 × IQR rule)**
+- Flagged univariate outliers in median income
 
----
+**Insight:**  
+The exercise highlights the fragility of the mean relative to the robustness of the median when distributions contain heavy tails.
 
-## Business Insight
-
-In an algorithmic economy increasingly driven by large datasets and automated decision systems, rigorous hypothesis testing functions as a critical **safety valve** against false discovery.
-
-Without falsification frameworks, organizations risk:
-- data grubbing,
-- overfitting narratives to noise,
-- and deploying models built on spurious correlations.
-
-Robust hypothesis testing enforces epistemic discipline by requiring claims to survive adversarial statistical scrutiny. This transforms analytics from descriptive pattern recognition into **decision-grade causal evidence**, enabling organizations to deploy data products with greater reliability, interpretability, and governance confidence.
+Visualization via boxplots illustrated how extreme values pull central tendency metrics — the “Elon Musk Effect” in income distributions.
 
 ---
 
-## Tools & Concepts
+### Phase 3 — Algorithmic Anomaly Detection
 
-- Python (analysis scripts pre-built)
-- SciPy statistical testing framework
-- Welch’s T-Test
-- Non-parametric permutation testing
-- Average Treatment Effect (ATE)
-- Hypothesis testing & falsification methodology
-- Type I error control
-- Causal inference fundamentals
+Manual rules detect only **univariate anomalies**. Real markets exhibit anomalies across relationships between variables.
+
+To detect multivariate irregularities, an **Isolation Forest** model was implemented:
+
+- Unsupervised anomaly detection
+- Ensemble-based isolation of rare observations
+- Contamination parameter set to 5% (expected anomaly share)
+- Feature space included income, housing characteristics, and population metrics
+
+The algorithm identified observations that were **few and structurally different**, rather than merely extreme in one dimension.
 
 ---
 
+### Phase 4 — Human vs. Machine Comparison
+
+A visual comparison evaluated differences between:
+
+- Human-defined statistical outliers (IQR)
+- Machine-detected anomalies (Isolation Forest)
+
+Key finding:
+
+> Machine learning detects *relationship anomalies* — cases where variables interact unusually — that traditional statistical rules cannot identify.
+
+---
+
+## Robustness Report: Tech Economist Analysis
+
+After separating the dataset into **core market observations** and **anomalous districts**, a comparative forensic analysis was conducted.
+
+### Analytical Tasks
+
+- Split dataset into normal and anomalous groups
+- Compared:
+  - Mean vs Median income and housing values
+  - Standard Deviation vs Median Absolute Deviation (MAD)
+- Measured the **Inequality Wedge**:
+  
