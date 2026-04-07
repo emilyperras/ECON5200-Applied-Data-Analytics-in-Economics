@@ -34,7 +34,7 @@ Through these projects, I am learning how to:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 The tools and frameworks used throughout this repository include:
 
