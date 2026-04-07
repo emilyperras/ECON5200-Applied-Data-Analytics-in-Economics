@@ -1,13 +1,13 @@
 # ECON5200-Applied-Data-Analytics-in-Economics
 
 
-# 📊 Economic Data Science Portfolio
+# Economic Data Science Portfolio
 
 Welcome! This repository serves as my digital portfolio for **ECON 5200: Applied Data Analytics in Economics**. It showcases my coursework, labs, and applied projects at the intersection of economic theory, statistics, and modern data science.
 
 ---
 
-## 👋 About Me
+## About Me
 
 I am an **undergraduate economics student** actively seeking opportunities in **Data Analysis, Economic Consulting, and Finance**.  
 My academic interests focus on bridging **traditional economic reasoning**—such as causal inference and structural thinking—with **scalable, data-driven methods** used in industry today.
@@ -16,7 +16,7 @@ This portfolio reflects my progression toward becoming a data-literate economist
 
 ---
 
-## 📁 About This Portfolio
+## About This Portfolio
 
 This repository contains applied coursework and lab assignments from **ECON 5200**, designed to demonstrate how core econometric concepts extend naturally into machine learning frameworks.
 
@@ -38,15 +38,15 @@ Through these projects, I am learning how to:
 
 The tools and frameworks used throughout this repository include:
 
-- 🐍 **Python** – Core programming language for analysis and modeling  
-- 🧮 **Pandas** – Data cleaning, manipulation, and exploration  
-- 📊 **Statsmodels** – Econometric modeling and statistical inference  
-- 🤖 **Scikit-Learn** – Machine learning algorithms and pipelines  
-- ☁️ **Google Colab** – Cloud-based development and reproducibility  
+- **Python** – Core programming language for analysis and modeling  
+- **Pandas** – Data cleaning, manipulation, and exploration  
+- **Statsmodels** – Econometric modeling and statistical inference  
+- **Scikit-Learn** – Machine learning algorithms and pipelines  
+- **Google Colab** – Cloud-based development and reproducibility  
 
 ---
 
-## 🚀 What You’ll Find Here
+## What You’ll Find Here
 
 - Applied econometric and machine learning labs  
 - Reproducible data analysis workflows  
