@@ -1,4 +1,4 @@
-%%writefile README.md
+
 # Lab 19: Tree-Based Models and Random Forests
 
 ## Objective
