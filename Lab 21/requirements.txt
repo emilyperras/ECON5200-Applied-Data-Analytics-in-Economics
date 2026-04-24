@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+statsmodels
+fredapi
+arch
+yfinance
+pmdarima
+prophet
+scikit-learn
