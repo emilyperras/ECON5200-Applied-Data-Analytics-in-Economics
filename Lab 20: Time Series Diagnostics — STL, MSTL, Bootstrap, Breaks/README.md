@@ -29,14 +29,10 @@ streamlit run src/app.py
 
 ## Repository Structure
 
-econ-lab-20-time-series/
-├── README.md
-├── requirements.txt
-├── verification-log.md
-├── notebooks/
-│   └── lab_ch20_diagnostic.ipynb
-├── src/
-│   ├── decompose.py
-│   └── app.py
-└── figures/
-    └── LINKTOFIGURES.md
+- README.md
+- requirements.txt
+- verification-log.md
+- notebooks/lab_ch20_diagnostic.ipynb
+- src/decompose.py
+- src/app.py
+- figures/LINKTOFIGURES.md
