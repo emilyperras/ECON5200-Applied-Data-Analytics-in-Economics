@@ -32,11 +32,11 @@ streamlit run src/app.py
 econ-lab-20-time-series/
 ├── README.md
 ├── requirements.txt
+├── verification-log.md
 ├── notebooks/
 │   └── lab_ch20_diagnostic.ipynb
 ├── src/
 │   ├── decompose.py
 │   └── app.py
-├── figures/
-│   └── LINKTOFIGURES.md
-└── verification-log.md
+└── figures/
+    └── LINKTOFIGURES.md
