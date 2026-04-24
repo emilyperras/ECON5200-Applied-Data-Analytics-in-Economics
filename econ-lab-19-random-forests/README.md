@@ -1,4 +1,3 @@
-# Tree-Based Models — Random Forests
 ### ECON 5200: Causal Machine Learning & Applied Analytics · Lab 19
 
 ## Objective
@@ -61,3 +60,4 @@ econ-lab-19-random-forests/
 
 ## Dependencies
 See `requirements.txt`. Core: `scikit-learn`, `shap`, `streamlit`, `plotly`, `pandas`, `numpy`.
+
